@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="jenkins.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="inner">
+                    <h3>Options</h3>
+                </div>
+            </div>
+            <div id="content">
+                <div class="inner">
+                    <!-- Build server URL -->
+                    <input id="url" placeholder="Build server URL" type="text" />
+                    <!-- Poll interval -->
+                    <label>Polling Interval</label>
+                    <select name="pollInterval">
+                        <option value="5000">5 seconds</option>
+                        <option value="15000">15 seconds</option>
+                        <option value="30000">30 seconds</option>
+                        <option value="60000">1 minute</option>
+                        <option value="300000">5 minutes</option>
+                        <option value="600000">10 minutes</option>                
+                        <option value="900000">15 minutes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="inner">
+                    <button id="save">Save</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="zepto.min.js"type="text/javascript"></script>
+        <script src="options.js"type="text/javascript"></script>
+    </body>
+
+</html>

@@ -1,0 +1,135 @@
+/* Override basic HTML styles */
+a:link { text-decoration: none;  }
+a:visited { text-decoration: none;  }
+a:hover { text-decoration: underline }
+a:active { text-decoration: underline }
+a, img, p { vertical-align: top; }
+
+body {
+    width: 350px;
+    margin: 0;
+    font-size: 75%;
+    font-family: "Lucida Grande", sans-serif;
+    color: #444;   
+}
+
+h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+		float: left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+		width: 100%;
+}
+
+label { font-weight: bold; }
+
+button {
+    padding: 0 8px;
+    background-color: #4D90FE;
+    background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
+    border: 1px solid #3079ED;
+    color: white;
+    border-radius: 2px;
+    height: 29px;
+    width: 70px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:focus, button:hover {
+    border-color: #2F5BB7;
+    background-image: -webkit-linear-gradient(top, #4D90FE, fi#357AE8);
+}
+
+li:hover {
+    /*background-image: -webkit-linear-gradient(top, #FFF, #EBEBEB);*/
+    background-color: #EBEBEB;
+}
+
+input, select {
+    padding: 4px;
+    font-size: 100%;
+    border: 1px solid #D8DEE2;
+    border-radius: 3px;
+    width: 100%;
+}
+
+/* Extension-specific styles */
+
+.container {
+/*    background: -webkit-gradient(linear, right bottom, right top, from(#EDEDED), to(white), color-stop(0.4, #EEE), color-stop(0.2, #F0F0F0));*/
+    -webkit-border-radius: 3px;
+    border: 1px solid #CCC;
+    position: relative;
+}
+
+.inner {
+    padding: 10px;
+}
+
+#content { width: 100%;  } 
+
+.header {  border-bottom: 1px solid #CCC; }
+
+.footer {
+    width: 100%;
+    text-align: right;
+    border-top: 1px solid #CCC;
+}
+
+/*
+ * Status list styles
+ */
+
+#statusList {
+    max-height: 300px;
+    overflow: auto;
+    /*margin: 10px 0 10px 0;*/
+}
+
+.buildStatus {
+/*		display: inline;*/
+		float: left;
+ }
+
+.buildDesc {
+/*		display: inline;*/
+/*		float: right;*/
+		margin-left: 35px;
+}
+
+/* Build job hyperlinks */
+.buildDesc a, .buildDesc a:visited {
+		font-weight: bold;
+		color: #444;
+}
+.buildDesc a:hover { color: blue; }
+/* 
+.buildDesc span {
+		white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+
+/* Options hyperlinks */
+.options a, .options a:visited { 
+		color: blue; 
+		font-weight: normal;
+}
+
+.options a:hover {text-decoration: underline }
+
+.title {
+		display: inline;
+}

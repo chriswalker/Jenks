@@ -1,0 +1,25 @@
+{
+	"name": "Jenks",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Monitors a given Jenkins server for build information.",
+	"browser_action": {
+		// default_title updated in the extension depending on status
+		"default_title": "Check build status",
+		"default_icon": "img/icon.png",
+		"default_popup": "popup.html"
+	},
+	// Handle websockets to the Jenkins server; will be
+	// responsible for displaying desktop notifications or polling
+	// the jenkins server.
+	"background": {
+		"page": "background.html"
+	},
+	"options_page": "options.html",
+	"permissions": [
+		"http://*/*",
+		"https://*/*",
+		"tabs", 
+		"notifications"
+	]
+}
